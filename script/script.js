@@ -4,64 +4,84 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const cardArray = [
         {
-            name:'fastX',
-            img: 'IMages/FastX.png'
+            name:'bulbausar',
+            img: 'IMages/bulbausar.png'
         },
 
         {
-            name:'fastX',
-            img: 'IMages/FastX.png'
+            name:'bulbausar',
+            img: 'IMages/bulbausar.png'
         },
 
         {
-            name:'John-Wick',
-            img: 'IMages/John-Wick.png'
+            name:'charmander',
+            img: 'IMages/charmander.png'
         },
 
         {
-            name:'John-Wick',
-            img: 'IMages/John-Wick.png'
+            name:'charmander',
+            img: 'IMages/charmander.png'
         },
 
 
         {
-            name:'mermaid',
-            img: 'IMages/Mermaid.png'
+            name:'mudkip',
+            img: 'IMages/mudkip.png'
         },
 
         {
-            name:'mermaid',
-            img: 'IMages/Mermaid.png'
+            name:'mudkip',
+            img: 'IMages/mudkip.png'
         },
 
         {
-            name:'Renfield',
-            img: 'IMages/Renfield.png'
+            name:'pikachu',
+            img: 'IMages/pikachu.png'
         },
 
         {
-            name:'Renfield',
-            img: 'IMages/Renfield.png'
+            name:'pikachu',
+            img: 'IMages/pikachu.png'
         },
         
         {
-            name:'Spider-Man',
-            img: 'IMages/Spider-Man.png'
+            name:'squirtle',
+            img: 'IMages/squirtle.png'
         },
 
         {
-            name:'Spider-Man',
-            img: 'IMages/Spider-Man.png'
+            name:'squirtle',
+            img: 'IMages/squirtle.png'
         },
 
         {
-            name:'transformers',
-            img: 'IMages/transformers.png'
+            name:'torchic',
+            img: 'IMages/torchic.png'
         },
 
         {
-            name:'transformers',
-            img: 'IMages/transformers.png'
+            name:'torchic',
+            img: 'IMages/torchic.png'
+        },
+
+        {
+            name:'totodile',
+            img: 'IMages/totodile.png'
+        },
+
+        {
+            name:'totodile',
+            img: 'IMages/totodile.png'
+        },
+
+        {
+            name:'trecko',
+            img: 'IMages/trecko.png'
+        },
+
+        {
+            name:'trecko',
+            img: 'IMages/trecko.png'
         },
     ]
 
@@ -77,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             var card = document.createElement('img')
-            card.setAttribute('src', 'IMages/65.png')
+            card.setAttribute('src', 'IMages/black.png')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -91,12 +111,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionTwoId = cardsChosenId[1]
         if (cardsChosen[0] === cardsChosen[1]) {
             alert('You found a match')
-            cards[optionOneId].setAttribute('src', 'IMages/blackening.png')
-            cards[optionTwoId].setAttribute('src', 'IMages/blackening.png')
+            cards[optionOneId].setAttribute('src', 'IMages/pokeball.png')
+            cards[optionTwoId].setAttribute('src', 'IMages/pokeball.png')
             cardsWon.push(cardsChosen)
         } else {
-            cards[optionOneId].setAttribute('src', 'IMages/65.png')
-            cards[optionTwoId].setAttribute('src', 'IMages/65.png')
+            cards[optionOneId].setAttribute('src', 'IMages/black.png')
+            cards[optionTwoId].setAttribute('src', 'IMages/black.png')
             alert('Sorry,try again')
         }
         cardsChosen = []
