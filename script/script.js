@@ -76,12 +76,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         {
             name:'trecko',
-            img: 'IMages/trecko.png'
+            img: 'IMages/trecko1.png'
         },
 
         {
             name:'trecko',
-            img: 'IMages/trecko.png'
+            img: 'IMages/trecko1.png'
         },
     ]
 
@@ -111,12 +111,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionTwoId = cardsChosenId[1]
         if (cardsChosen[0] === cardsChosen[1]) {
             alert('You found a match')
-            cards[optionOneId].setAttribute('src', 'IMages/pokeball.png')
-            cards[optionTwoId].setAttribute('src', 'IMages/pokeball.png')
+            cards[optionOneId].setAttribute('src', 'IMages/pokeball2.png')
+            cards[optionTwoId].setAttribute('src', 'IMages/pokeball2.png')
             cardsWon.push(cardsChosen)
         } else {
-            cards[optionOneId].setAttribute('src', 'IMages/black.png')
-            cards[optionTwoId].setAttribute('src', 'IMages/black.png')
+            cards[optionOneId].setAttribute('src', 'IMages/black1.png')
+            cards[optionTwoId].setAttribute('src', 'IMages/black1.png')
             alert('Sorry,try again')
         }
         cardsChosen = []
