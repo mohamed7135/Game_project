@@ -1,77 +1,82 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
+    const levels = {
+        easy: 6,
+        medium: 8,
+        hard: 12
+    };
 
     const cardArray = [
         {
             name:'bulbausar',
-            img: 'IMages/bulbausar.png'
+            img: 'IMages/bulbausar1.png'
         },
 
         {
             name:'bulbausar',
-            img: 'IMages/bulbausar.png'
+            img: 'IMages/bulbausar1.png'
         },
 
         {
             name:'charmander',
-            img: 'IMages/charmander.png'
+            img: 'IMages/charmander1.png'
         },
 
         {
             name:'charmander',
-            img: 'IMages/charmander.png'
+            img: 'IMages/charmander1.png'
         },
 
 
         {
             name:'mudkip',
-            img: 'IMages/mudkip.png'
+            img: 'IMages/mudkip1.png'
         },
 
         {
             name:'mudkip',
-            img: 'IMages/mudkip.png'
+            img: 'IMages/mudkip1.png'
         },
 
         {
             name:'pikachu',
-            img: 'IMages/pikachu.png'
+            img: 'IMages/pikachu1.png'
         },
 
         {
             name:'pikachu',
-            img: 'IMages/pikachu.png'
+            img: 'IMages/pikachu1.png'
         },
         
         {
             name:'squirtle',
-            img: 'IMages/squirtle.png'
+            img: 'IMages/squirtle1.png'
         },
 
         {
             name:'squirtle',
-            img: 'IMages/squirtle.png'
+            img: 'IMages/squirtle1.png'
         },
 
         {
             name:'torchic',
-            img: 'IMages/torchic.png'
+            img: 'IMages/torchic1.png'
         },
 
         {
             name:'torchic',
-            img: 'IMages/torchic.png'
+            img: 'IMages/torchic1.png'
         },
 
         {
             name:'totodile',
-            img: 'IMages/totodile.png'
+            img: 'IMages/totodile1.png'
         },
 
         {
             name:'totodile',
-            img: 'IMages/totodile.png'
+            img: 'IMages/totodile1.png'
         },
 
         {
@@ -97,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             var card = document.createElement('img')
-            card.setAttribute('src', 'IMages/black.png')
+            card.setAttribute('src', 'IMages/black1.png')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -111,8 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionTwoId = cardsChosenId[1]
         if (cardsChosen[0] === cardsChosen[1]) {
             alert('You found a match')
-            cards[optionOneId].setAttribute('src', 'IMages/pokeball2.png')
-            cards[optionTwoId].setAttribute('src', 'IMages/pokeball2.png')
+            cards[optionOneId].setAttribute('src', 'IMages/pokeball1.png')
+            cards[optionTwoId].setAttribute('src', 'IMages/pokeball1.png')
             cardsWon.push(cardsChosen)
         } else {
             cards[optionOneId].setAttribute('src', 'IMages/black1.png')
