@@ -1,10 +1,19 @@
 body {
-    height: 100vh;
-    background: repeating-linear-gradient(
-      to right,
-      #ffcb05 ,
-      #2a75bb ,
-      #c7a008 ,
-      #3c5aa6 
-    );
-  }
+  height: 100vh;
+  background: repeating-linear-gradient(
+    to right,
+    #FFCB05 ,
+    #2A75BB ,
+    #C7A008 ,
+    #3C5AA6
+  );
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 4000px;
+}
+.hidden {
+  display: none;
+}
