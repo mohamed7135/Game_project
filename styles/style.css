@@ -8,12 +8,13 @@ body {
     #3C5AA6
   );
 }
-.grid {
+/* .grid {
   display: flex;
   flex-wrap: wrap;
   height: 300px;
   width: 4000px;
-}
+} */
 .hidden {
   display: none;
 }
+
