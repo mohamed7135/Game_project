@@ -1,2 +1,10 @@
-
-
+body {
+    height: 100vh;
+    background: repeating-linear-gradient(
+      to right,
+      #ffcb05 ,
+      #2a75bb ,
+      #c7a008 ,
+      #3c5aa6 
+    );
+  }
